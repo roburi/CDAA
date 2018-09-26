@@ -9,9 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Toolbar;
 import java.util.ArrayList;
-
+import java.util.Objects;
 import burgos.com.rodrigram.R;
 import burgos.com.rodrigram.adapter.PictureAdapterRecyclerView;
 import burgos.com.rodrigram.model.Picture;
@@ -21,23 +21,19 @@ public class ProfileFragment extends Fragment
 {
 
 
-    public ProfileFragment()
-    {
-
-    }
+    public ProfileFragment(){ }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        showToolbar("", true, view);
+        showToolbar("", false, view);
         RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureProfileRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         picturesRecycler.setLayoutManager(linearLayoutManager);
 
-        PictureAdapterRecyclerView pictureAdapterRecyclerView =
-                new PictureAdapterRecyclerView(buildPictures(),R.layout.cardview_picture, getActivity());
+        PictureAdapterRecyclerView pictureAdapterRecyclerView = new PictureAdapterRecyclerView(buildPictures(),R.layout.cardview_picture, getActivity());
 
         picturesRecycler.setAdapter(pictureAdapterRecyclerView);
         return view;
@@ -54,12 +50,12 @@ public class ProfileFragment extends Fragment
     }
     public void showToolbar(String tittle, boolean upButton, View view)
     {
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) view.findViewById(R.id.toolbar);
+        /*android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) view.findViewById(R.id.toolbar);
 
-        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        if (((AppCompatActivity) getActivity()).getSupportActionBar() != null) {
+            ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(tittle);
 
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(tittle);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
-
+        }*/
     }
 }

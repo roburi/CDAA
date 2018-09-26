@@ -36,6 +36,4 @@
         android:src="@mipmap/ic_floatingbutton"
         />
 
-
-
 </android.support.design.widget.CoordinatorLayout>
