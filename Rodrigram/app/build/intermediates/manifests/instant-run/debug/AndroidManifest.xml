@@ -38,7 +38,13 @@
             android:label="@string/title_activity_referencia"
             android:theme="@style/AppTheme" />
         <activity android:name="burgos.com.rodrigram.view.ContainerActivity" />
-        <activity android:name="burgos.com.rodrigram.view.PictureDetailActivity" />
+        <activity
+            android:name="burgos.com.rodrigram.view.PictureDetailActivity"
+            android:parentActivityName="burgos.com.rodrigram.view.ContainerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ContainerActivity" />
+        </activity>
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
