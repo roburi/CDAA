@@ -1,6 +1,7 @@
 package burgos.com.rodrigram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +18,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import burgos.com.rodrigram.R;
 import burgos.com.rodrigram.model.Picture;
+import burgos.com.rodrigram.view.PictureDetailActivity;
 
 public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdapterRecyclerView.PictureViewHolder>
 {
@@ -47,9 +49,16 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.timeCard.setText(picture.getTime());
         holder.likeNumberCard.setText(picture.getLike_number());
 
-        //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(holder.pictureCard);
+        //Picasso.with(picture).load("http://i.imgur.com/DvpvklR.png").into(holder.pictureCard);
         Picasso.get().load(picture.getPicture()).into(holder.pictureCard);
 
+        holder.pictureCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity, PictureDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     public int getItemCount()

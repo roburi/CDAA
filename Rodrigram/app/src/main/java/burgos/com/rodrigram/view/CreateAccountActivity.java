@@ -3,7 +3,6 @@ package burgos.com.rodrigram.view;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toolbar;
-
 import java.util.Objects;
 
 import burgos.com.rodrigram.R;
@@ -20,12 +19,13 @@ public class CreateAccountActivity extends AppCompatActivity
 
     public void showToolbar(String tittle, boolean upButton)
     {
-       Toolbar toolBar = findViewById(R.id.toolbar);
+       android.support.v7.widget.Toolbar toolBar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
 
-        if(getSupportActionBar() != null)
-        {
-            getSupportActionBar().setTitle(tittle);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
-        }
+            setSupportActionBar(toolBar);
+
+            if(getSupportActionBar() != null) {
+                getSupportActionBar().setTitle(tittle);
+                getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
+            }
     }
 }

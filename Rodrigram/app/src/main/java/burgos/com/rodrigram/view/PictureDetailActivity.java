@@ -7,8 +7,6 @@ import burgos.com.rodrigram.R;
 
 public class PictureDetailActivity extends AppCompatActivity
 {
-
-    @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
