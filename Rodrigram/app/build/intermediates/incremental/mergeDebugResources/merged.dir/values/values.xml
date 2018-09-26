@@ -447,6 +447,7 @@
         </attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="reference|color" name="textColorError"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="EasyCoordinatorView"><attr format="reference" name="dependsOn"/><attr name="dependType"><enum name="height" value="0"/><enum name="width" value="1"/><enum name="x" value="2"/><enum name="y" value="3"/></attr><attr format="dimension" name="dependTargetX"/><attr format="dimension" name="dependTargetY"/><attr format="dimension" name="dependTargetWidth"/><attr format="dimension" name="dependTargetHeight"/><attr format="dimension" name="targetX"/><attr format="dimension" name="targetY"/><attr format="dimension" name="targetWidth"/><attr format="dimension" name="targetHeight"/><attr format="color" name="targetBackgroundColor"/><attr format="float" name="targetAlpha"/><attr format="float" name="targetRotateX"/><attr format="float" name="targetRotateY"/><attr format="reference" name="animation"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize">
             
             <enum name="auto" value="-1"/>
@@ -772,10 +773,12 @@
     <dimen name="design_tab_scrollable_min_width">72dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
+    <dimen name="dimen_circleimageprofile">160dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="editText_margin_createaccount">10sp</dimen>
     <dimen name="edittext_textsize_login">22sp</dimen>
+    <dimen name="elevation_circleimageprofile">10dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="fastscroll_default_thickness">8dp</dimen>
     <dimen name="fastscroll_margin">0dp</dimen>
@@ -795,6 +798,7 @@
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
     <dimen name="like_margintop_card">10sp</dimen>
     <dimen name="marginleft_secondword">7dp</dimen>
+    <dimen name="margintop_circleimageprofile">30dp</dimen>
     <dimen name="notification_action_icon_size">32dp</dimen>
     <dimen name="notification_action_text_size">13sp</dimen>
     <dimen name="notification_big_circle_margin">12dp</dimen>
@@ -816,6 +820,7 @@
     <dimen name="textsize_likenumberdetail">15sp</dimen>
     <dimen name="textsize_username_card">25sp</dimen>
     <dimen name="textsize_usernamedetail">25sp</dimen>
+    <dimen name="textsize_usernameprofile">30dp</dimen>
     <dimen name="timecard_marginleft_card">5sp</dimen>
     <dimen name="tooltip_corner_radius">2dp</dimen>
     <dimen name="tooltip_horizontal_padding">16dp</dimen>
