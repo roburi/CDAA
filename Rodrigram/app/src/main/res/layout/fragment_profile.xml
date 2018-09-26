@@ -21,18 +21,30 @@
             android:id="@+id/collapsingToolbarProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:statusBarScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             >
-
-            <TextView
-                android:id="@+id/userNameProfile"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/username_card"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textsize_usernameprofile"
-
-                />
-
+                android:orientation="vertical"
+                android:paddingTop="200dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/userNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/username_card"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_usernameprofile"
+                    />
+            </LinearLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
 
         <android.support.v7.widget.Toolbar
@@ -43,6 +55,15 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pictureProfileRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v7.widget.RecyclerView>
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="@dimen/dimen_circleimageprofile"
         android:layout_height="@dimen/dimen_circleimageprofile"
@@ -52,8 +73,8 @@
         android:elevation="@dimen/elevation_circleimageprofile"
         app:layout_behavior="com.zoonref.SimpleViewBehavior"
         app:dependsOn="@+id/appBarProfile"
-        app:dependsType="y"
-        app:dependsTargetY="@dimen/limitY_circleimage"
+        app:dependType="y"
+        app:dependTargetY="@dimen/limitY_circleimage"
         app:targetX="@dimen/activity_vertical_margin"
         app:targetY="@dimen/margintop_circleimageprofiletoolbar"
         app:targetWidth="@dimen/width_circleimagetoolbar"
@@ -64,6 +85,20 @@
         android:id="@+id/usernameToolbarProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/username_card"
+        android:textSize="@dimen/textsize_usernametoolbarprofile"
+        android:elevation="@dimen/elevation_circleimageprofile"
+        android:layout_marginLeft="@dimen/marginleft_usernametoolbarprofile"
+        android:layout_marginTop="@dimen/margintop_usernametoolbarprofile"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:alpha="0"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarProfile"
+        app:dependType="y"
+        app:dependTargetY="@dimen/limitY_usernametoolbarprofile"
+        app:targetY="@dimen/margintoptargety_usernametoolbarprofile"
+        app:targetAlpha="1"
 
         />
 </android.support.design.widget.CoordinatorLayout>

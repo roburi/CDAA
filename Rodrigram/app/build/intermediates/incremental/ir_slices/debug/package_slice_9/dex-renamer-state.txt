@@ -1,4 +1,4 @@
-#Wed Sep 26 10:58:13 MDT 2018
-base.0=D\:\\Proyectos\\Nueva carpeta\\Nueva carpeta\\CDAA\\Rodrigram\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
+#Wed Sep 26 15:59:24 MDT 2018
+base.0=D\:\\Proyectos\\Nueva carpeta\\Nueva carpeta\\CDAA\\Rodrigram\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\60
 path.0=classes.dex
 renamed.0=classes.dex
