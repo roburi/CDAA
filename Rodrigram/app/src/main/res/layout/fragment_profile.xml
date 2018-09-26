@@ -50,6 +50,20 @@
         android:layout_gravity="center|top"
         android:layout_marginTop="@dimen/margintop_circleimageprofile"
         android:elevation="@dimen/elevation_circleimageprofile"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarProfile"
+        app:dependsType="y"
+        app:dependsTargetY="@dimen/limitY_circleimage"
+        app:targetX="@dimen/activity_vertical_margin"
+        app:targetY="@dimen/margintop_circleimageprofiletoolbar"
+        app:targetWidth="@dimen/width_circleimagetoolbar"
+        app:targetHeight="@dimen/width_circleimagetoolbar"
+        />
+
+    <TextView
+        android:id="@+id/usernameToolbarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
         />
 </android.support.design.widget.CoordinatorLayout>
