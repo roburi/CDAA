@@ -1,4 +1,4 @@
-#Wed Sep 26 17:23:41 MDT 2018
-base.0=D\:\\Proyectos\\Nueva carpeta\\Nueva carpeta\\CDAA\\Rodrigram\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\76
+#Wed Sep 26 19:59:52 MDT 2018
+base.0=F\:\\Desarrollo Android\\ProyectoRodrigram\\CDAA\\Rodrigram\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
 path.0=classes.dex
 renamed.0=classes.dex

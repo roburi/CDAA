@@ -1,6 +1,7 @@
 package burgos.com.rodrigram;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,5 +29,10 @@ public class LoginActivity extends AppCompatActivity
     {
         intentContainer = new Intent(getApplicationContext(), ContainerActivity.class);
         startActivity(intentContainer);
+    }
+    public void goPlatziGram(View view)
+    {
+        intentContainer = new Intent(getApplicationContext(), ContainerActivity.class);
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.platzi.com")));
     }
 }

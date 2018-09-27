@@ -4505,7 +4505,8 @@ public final class R {
     public static final int title_activity_referencia=0x7f0c003b;
     public static final int titleimagedetail=0x7f0c003c;
     public static final int toolbar_title_createaccount=0x7f0c003d;
-    public static final int username_card=0x7f0c003e;
+    public static final int transitionname_picture=0x7f0c003e;
+    public static final int username_card=0x7f0c003f;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0d0000;

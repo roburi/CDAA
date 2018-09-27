@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Proyectos\\Nueva carpeta\\Nueva carpeta\\CDAA\\Rodrigram\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "outputFile": "F:\\Desarrollo Android\\ProyectoRodrigram\\CDAA\\Rodrigram\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
-                    "source": "D:\\Proyectos\\Nueva carpeta\\Nueva carpeta\\CDAA\\Rodrigram\\app\\src\\main\\res\\values-en\\strings.xml",
+                    "source": "F:\\Desarrollo Android\\ProyectoRodrigram\\CDAA\\Rodrigram\\app\\src\\main\\res\\values-en\\strings.xml",
                     "from": {
                         "startLines": "2,8,7,15,12,9,10,5,11,4,17,21,19,20,18,13,6,16,3,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

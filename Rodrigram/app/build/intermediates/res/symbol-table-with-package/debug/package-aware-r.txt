@@ -1312,7 +1312,8 @@ int string timecard_card 0x7f0c003a
 int string title_activity_referencia 0x7f0c003b
 int string titleimagedetail 0x7f0c003c
 int string toolbar_title_createaccount 0x7f0c003d
-int string username_card 0x7f0c003e
+int string transitionname_picture 0x7f0c003e
+int string username_card 0x7f0c003f
 int style AlertDialog_AppCompat 0x7f0d0000
 int style AlertDialog_AppCompat_Light 0x7f0d0001
 int style Animation_AppCompat_Dialog 0x7f0d0002
